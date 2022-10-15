@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        UDM E-Class
+    </title>
+    <header>
+        <title>
+            UDM E-Class
+        </title>
+        <style>
+			
+			body {
+            font-family: system-ui; 
+            background-color: #005515cc;
+            }
+            
+            h1{
+			font-family: system-ui;
+			color: white;
+			font-weight: bold;
+			display: inline-block;
+			margin-left: 20px;
+            }   
+			
+			footer {
+            height: auto;
+            width: 100%;
+            color: white;
+            padding: 10px;
+            background-color: #333;
+            text-align: center;
+            position: fixed;
+            bottom: 0%;
+            margin:auto;
+			font-size: 15px;
+            }
+			
+			
+            @media screen and (min-width: 601px) {
+                div.header {
+                    font-size: 60px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                div.header {
+                    font-size: 30px;
+                }
+            }
+          
+			<!--dashboard to profile-->
+            .topnav {
+            overflow: auto;
+            }
+
+            .topnav a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 8px 10px;
+            text-decoration: none;
+            font-size: 17px;
+			margin-top: 15px;
+			margin-right: 10px;
+			
+            }
+            .topnav a.split {
+                float: right;
+                color: white;
+            }
+
+            .topnav a:hover {
+            color: #FFD700;
+            }
+
+            .topnav a.active {
+            background-color: rgb(255, 162, 0);
+            color: black;
+            }
+
+            .topnav .icon {
+            display: none;
+            }
+			
+            @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            }
+
+            @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+ 
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+
+			
+			
+			.side a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 8px 10px;
+            text-decoration: none;
+            font-size: 17px;
+			margin-top: 15px;
+			margin-right: 10px;
+			
+            }
+            .side a.split {
+                float: right;
+                color: white;
+            }
+			
+			.side a:hover {
+            color: #FFD700;
+            }
+
+			.sidebar {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			background-color:white;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+			float: right;
+			}
+
+			.sidebar a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 15px;
+			font-family: system-ui;
+			color: #005515cc;
+			display: block;
+			transition: 0.3s;
+			}
+
+			.sidebar .closebtn {
+			color: #005515cc;
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			
+        </style>
+    </header>
+    <body>
+		
+		
+        
+		<!--PROFILE-->
+		<div class="side" id="navbar">
+			<a href="#profile" class="openbtn" onclick="openNav()"><i class="fa fa-user-circle"></i> Profile</a>
+		</div>
+		
+		<div id="mySidebar" class="sidebar">
+			<img src="img/arvin.jpg" alt="arvin" width="188px" height="188px">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">Name</a>
+			<a href="#">Student Number</a>
+			<a href="#">Course & Section</a>
+			<a href="#">Contacts</a>
+			<a href="#Archived"><i class="fa fa-archive"></i> Archived Classes</a>
+			<a href="#grades"><i class="fa fa-file"></i> Grades</a>
+		</div>
+	
+		<script>
+			function openNav() {
+			document.getElementById("mySidebar").style.width = "300px";
+			document.getElementById("main").style.margin= "0";
+			}
+
+			function closeNav() {
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("main").style.marginRight= "0";
+			}
+		</script>
+	
+		
+		<!--UDM E CLASSROOM MENU-->
+        <div class="topnav" id="navbar">
+			
+			<a href="#calendar"><i class="fa fa-calendar"></i> Calendar</a>
+
+			<a href="#site"><i class="fa fa-home"></i>Home</a>
+			<a href="courses.html"><i class="fa fa-folder"></i> Dashboard</a> 
+		
+			<h1> UDM&nbsp;<h1 style="color:#FFD700"> E-CLASSROOM </h1></h1>
+		</div>
+		
+		
+		</div>
+	
+ 
+ 
+ 
+ 
+        <footer>
+            Copyright All Rights Reserved 2022
+        </footer>
+       
+	   
+	   
+	   
+	   
+	   
+	   
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>ECLASSROOM</title>
+		</head>
+
+
+	<style>
+
+
+		body {
+		font-family: system-ui;
+		background-image: url("img/XD.gif");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 650px;
+		}
+		
+		
+
+		input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		}
+
+		button {
+		background-color: #005515cc;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		border-radius: 8px;
+		border: 2px solid #00000;
+		}
+		
+
+		button:hover {
+		opacit//y: 0.8;
+		}
+
+
+		.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		background-color: #005515cc;
+		}
+
+		.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+		position: relative;
+		}
+
+		.container {
+		padding: 16px;
+		}
+
+		span.sn {
+		float: right;
+		padding-top: 16px;
+		}
+
+		.modal {
+		display: none; 
+		position: fixed; 
+		overflow: auto;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%; 
+		height: 100%; 
+		overflow: auto;
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.4); 
+		padding-top: 60px;
+		}
+
+		.modal-content {
+		background-color: white;
+		margin: 5% auto 15% auto; 
+		border: 1px solid #888;
+		width: 40%;
+		}
+
+		.close {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		color: #000;
+		font-size: 35px;
+		font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		color: #005515cc;
+		cursor: pointer;
+		}
+
+		.animate {
+		-webkit-animation: animatezoom 0.6s;
+		animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+		from {-webkit-transform: scale(0)} 
+		to {-webkit-transform: scale(1)}
+		}
+  
+		@keyframes animatezoom {
+		from {transform: scale(0)} 
+		to {transform: scale(1)}
+		}
+
+		@media screen and (max-width: 300px) {
+		span.psw {
+		display: block;
+		float: none;
+		}
+		.cancelbtn {
+		width: 100%;
+			}
+		}
+	
+	</style>
+
+<body>
+
+		
+	
+		
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:20%;">Student Login</button>
+		
+			<div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+    
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="img/logo.png" alt="logo" width="225px" height="225px">
+				</div>
+
+			<div class="container">
+				<label for="Studname"><b>Student Number</b></label>
+				<input type="text" placeholder="Enter Student Number" name="Studname" required>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+        
+				<button type="submit">Login</button>
+			
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		<span class="sn">Forgot <a href="#">Student Number?</a></span>
+   
+		</div>
+
+
+		</form>
+		</div>
+
+		<script>
+			var modal = document.getElementById('id01');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+		}
+		</script>
+
+	</body>
+</html>
